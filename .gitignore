@@ -1,0 +1,24 @@
+# Allowlist: ignora tudo e libera só a configuração pessoal.
+*
+!.gitignore
+!settings.json
+!agents/
+!agents/**
+!skills/
+!skills/**
+!rules/
+!rules/**
+!hooks/
+!hooks/**
+!commands/
+!commands/**
+!plugins/
+plugins/*
+!plugins/installed_plugins.json
+!plugins/known_marketplaces.json
+
+# Exclusões dentro das pastas liberadas
+skills/.trash/
+skills/synced/
+# Symlink para /home/colaco/... (não existe nesta máquina); remover esta linha se virar arquivo real
+agents/jarbas-check-runner.md
