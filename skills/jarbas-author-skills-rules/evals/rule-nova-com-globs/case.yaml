@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: rule-nova-com-globs
+expected_outcome: |
+  Plano de autoria de uma rule nova com globs: fonte em ecosystem/canonical/rule/<id>/ com
+  meta.yaml e content.md sem frontmatter, activation files com globs, materialize.py e commit
+  com fontes, saídas e manifesto; nunca editar .claude/rules nem .cursor/rules.

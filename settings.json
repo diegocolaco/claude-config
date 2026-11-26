@@ -9,7 +9,7 @@
   "model": "haiku",
   "statusLine": {
     "type": "command",
-    "command": "\"/usr/local/bin/node\" \"/home/colaco/.claude/.claude-manager/statusline-tap.js\""
+    "command": "\"/usr/local/bin/node\" \"/home/diego/.claude/.claude-manager/statusline-tap.js\""
   },
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true

@@ -1,0 +1,10 @@
+id: exportar-conversa-e-arquivos-para-revisao
+type: skill
+scope: agent-requestable
+description: Use quando pedir ZIP de revisão com conversa, inventário SHA-256 e artefatos
+  permitidos.
+targets:
+  cursor:
+    directory: exportar-conversa-e-arquivos-para-revisao
+governance:
+  export_external: true

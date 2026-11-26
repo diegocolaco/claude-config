@@ -1,0 +1,8 @@
+id: auxilio-testes-pr-sgd
+type: skill
+scope: agent-requestable
+description: Use quando abrir ou atualizar PR do SGD novo, git-env publish/pr-create,
+  ou pedir auxílio de testes por PR (profile sgd-novo).
+targets:
+  cursor:
+    directory: auxilio-testes-pr-sgd

@@ -1,0 +1,10 @@
+id: task-engineer
+type: skill
+scope: agent-requestable
+description: Use whenever the user asks to create, change, repair or optimize VS Code/Cursor
+  tasks, startup, build, test, deploy or infrastructure task automation.
+targets:
+  cursor:
+    directory: task-engineer
+governance:
+  export_external: true

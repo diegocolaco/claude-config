@@ -1,0 +1,12 @@
+{
+  "nome": "umi",
+  "rotulo": "Umi",
+  "descricao": "Umi Max (Ant Design): lista de objetos { path, component, routes } em config/routes.ts.",
+  "estrategia": "objeto-config",
+  "prioridade": 10,
+  "marcas": {"arquivos": ["config/routes.ts"]},
+  "aliases": {"@/": "src/"},
+  "arquivos": ["config/routes.ts"],
+  "chaves": {"caminho": "path", "componente": "component", "filhas": "routes"},
+  "pasta_componentes": "src/pages"
+}

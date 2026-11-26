@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: fim-de-tarefa-so-o-worktree-dela
+expected_outcome: |
+  Remove só o worktree da tarefa encerrada (projetos/worktrees/pronto), preservando a branch,
+  e não mexe nos outros worktrees do workspace.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,39 @@
+# Etapa: ajuste numa tela já pronta
+
+O pedido do Diego traz as correções. Se ele não disser a tela ou o que corrigir, pergunte só isso. Modelo e esforço indicados: Sonnet, Medium. Trabalhe em worktree próprio do produto, a partir do `develop`, com a branch `paridade/ajuste-<tela>`. O Diego confere e decide a integração.
+
+O que falha neste fluxo é a omissão: citação correta não mostra o que o agente deixou de ler. Por isso o caminho completo parte de uma checklist gerada por script, e cada linha dela precisa de marca e evidência.
+
+## Caminho curto
+
+**Caminho curto:** só texto ou aparência local, em arquivo que nenhuma outra tela usa, e sem comportamento ao lado: o item não tem cenário no catálogo, ou todos os cenários da região dele estão só com a dimensão `visual`. Item sem cenário não tem região: os outros cenários da tela não contam. Confirme pelo raio (passo 6), por `git grep` e pelo catálogo, não por julgamento: julgamento é onde o ajuste num componente comum já quebrou outras telas. Rótulo de campo com validação na mesma região vai pelo caminho completo, porque é ali que a checklist acha o que o pedido não citou. Responda só com o texto exato e a citação no protótipo (`arquivo:linha`), sem passada, marcas ou revisão, e sem subir o SGD. Na dúvida, caminho completo.
+
+## Caminho completo
+
+1. **Leitura:** os cenários da tela no catálogo, o documento de decisões, os critérios do grupo e a `disposition`. Com `@onviobr/dom-components` no `package.json` do alvo, mantenha a seção 4 de `../../prototype-parity-verification/references/decisoes-e-planos.md`; não troque a biblioteca de uma tela sem perguntar.
+2. **Fatos sob demanda:** sem `.squad/contracts/parity/fatos/<TL-id>.json`, a checklist não existe. Rode a passada de fatos só nessa tela (`../../descoberta-em-ondas/references/passada-de-fatos.md`), com a revisão em Sonnet, e grave com `--ao-lado` em commit próprio, antes da correção, para o diff dela ficar limpo. Se aparecer `CENARIO_LIGADO` ou `CENARIO_SEM_DONO`, trate como a passada manda e diga no relato.
+3. **Esperado:** vem do protótipo, salvo decisão registrada. Citação em mock não define o esperado sem decisão do Diego. `disposition` e Dom DS têm prioridade. Fato com `imprecisao` vale pelo motivo, não pelo texto.
+4. **Checklist:** antes de alterar, `python3 ../../prototype-parity-verification/scripts/marcas_ajuste.py lista <catalogo> <pasta de fatos> <TL-id> <SC-id>... --saida <checklist.json>`. Ele expande cada cenário para a região inteira, para ninguém escolher um recorte estreito, e junta os fatos, as ausências e o padrão de biblioteca da tela. Grave `checklist.json` e `marcas.json` fora do worktree do produto, para não entrarem no commit. Antes de entregar, `marcas_ajuste.py confere <checklist.json> <marcas.json> <produto>`: o `confere` remonta a checklist e compara com a recebida, e toda linha leva uma marca. Isso prova que nada foi pulado e que a evidência existe, não que a marca está certa.
+   - **Marcas** em `marcas.json`, lista de `{"id", "marca", "evidencia", "motivo"}`. `cumpre`, `muda` e `diverge` citam `arquivo:linha` do produto, que existe e é código, não binário, `.git/` ou `.squad/`. Evidência em catálogo ou fatos não vale, porque eles não provam o que o produto faz.
+     - **Fato:** `cumpre` = o produto faz o que a linha diz; `muda` = estava diferente e foi alterado nesta entrega; `diverge` = está diferente e não foi corrigido por estar fora do pedido. Linha que uma decisão registrada manda manter diferente leva `cumpre`, com a decisão no `motivo`.
+     - **Ausência** («o protótipo não tem X»): `cumpre` = o produto também não tem, com evidência no trecho onde X apareceria (o handler ou fluxo lido); `diverge` = o produto tem X; `muda` = X foi removido nesta entrega.
+     - **Biblioteca:** `cumpre` = o produto reproduz o padrão, com evidência no uso; `diverge` e `muda` como em fato.
+     - `nao_verificado`: não consegui concluir; exige `motivo`.
+   - **Comportamento pedido sem linha na checklist** está fora do catálogo: responda sobre ele às perguntas de `../../descoberta-em-ondas/references/briefs/ausencias.md`, pare e pergunte. Se o Diego confirmar, vira diferença nova, com plano curto, `ligar` e o resto da seção 8 de `../../prototype-parity-verification/references/decisoes-e-planos.md`.
+5. **Linha pedida:** a que descreve o que o Diego pediu leva `muda`. Sem nenhum `muda`, o `confere` não passa, e assim a correção fica ligada à checklist. Se não der para concluí-la (`nao_verificado`), pare e pergunte; nas demais, `nao_verificado` fica visível no relato e nunca conta como aprovado. Tudo o que ficou `diverge` entra no relato como achado fora do pedido.
+6. **Raio:** rode `../../prototype-parity-verification/scripts/raio_alcance.py` para cada arquivo alterado. Ele não segue pacotes do workspace; com o arquivo fora da pasta de `--src`, complemente com `git grep`. Resultado 0 ou `alias_sem_uso` não prova isolamento. «Várias telas» (abaixo) conta só as telas pedidas: as do raio ampliam os testes e não viram grupo.
+7. **Teste:** o que falha antes tira o esperado da citação do protótipo, nunca do código novo, que passaria por construção. Ele entra num arquivo que já está em `tests[]` do cenário, o que o `ligar` gravou. Cenário funcional sem arquivo em `tests[]`: não edite o catálogo; vira diferença nova com plano curto, seções 8 e 10 de decisoes-e-planos.md. Cenário visual não recebe teste falso: confira pelo código. Rode os testes da tela e os das telas do raio.
+8. **Revisão:** `task-reviewer`, em Sonnet, obrigatória quando tocar arquivo compartilhado, validação, permissão, backend ou regra de negócio, ou quando o executor for Haiku. O revisor lista os requisitos a partir da checklist antes de ler o diff, para não aceitar só o que o diff mostra, e roda `lista` de novo para conferir a checklist.
+9. **Subir e testar:** depois da revisão, uma vez, siga o passo 11 de [ajuste-sem-catalogo.md](ajuste-sem-catalogo.md), com estas trocas: `--base develop` no `test` e `develop` na volta à versão de antes, no lugar de `<inicio>`; «passos 9 e 10» é o passo 8 daqui; falha nova volta ao passo 7 daqui; e `<pasta>` é uma pasta temporária deste ajuste, fora do worktree. Depois de corrigir, rode de novo. O slot fica de pé até a resposta do Diego ao relato daqui, que faz as vezes do passo 14 de lá, como diz o item 3; num pedido de mudança, segue de pé para a repetição. O resultado, os tempos ou o motivo de ter ficado sem conferir entram no relato.
+
+## Pelo tamanho
+
+- **1 a 3 correções:** sem plano; corrija direto.
+- **4 a 10 correções:** plano curto, com 2 ou 3 tarefas que agrupam correções parecidas, revisão por tarefa e revisão final. O controlador gera as checklists e copia as linhas para as tarefas, porque o implementador não lê o catálogo; cada implementador devolve as marcas das suas linhas. O controlador junta as marcas e roda o `confere` no fim, e é ele quem tem o `checklist.json` e o catálogo. O plano traz o raio e, havendo ausências, a saída de `../../prototype-parity-verification/scripts/matriz_variacoes.py`.
+- **Mais de 10, ou várias telas:** pare e proponha um grupo novo em «Grupos».
+
+## Relato e medição
+
+O relato tem sempre: a correção, o cenário e o teste; o resultado do passo 9, com as jornadas e os tempos; o resumo do `confere`; as telas do raio testadas e as sem teste; a saída de `../../prototype-parity-verification/scripts/verificacao.py stubs --arquivos`, como candidato, nunca como prova; e o que foi achado fora do pedido. Isso não se corrige: o que o Diego escolher vira diferença nova e entra em «Divergências abertas».
+
+Ao encerrar, não marque etapa: acrescente a medição, com a tela, o número de correções e os segundos do `up` e do `test` do passo 9, e em `andamento.txt` as falhas que escaparam, com a linha da checklist que teria pegado cada uma. Mudar a skill por causa disso é tarefa própria, em outro worktree.

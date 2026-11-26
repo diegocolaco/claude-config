@@ -1,0 +1,9 @@
+id: sgd-parity-ui-acl
+type: rule
+scope: agent-requestable
+description: "SGD novo — ACL de menu (user/admin/master) e UI (layout do proto + padrao de listagem do SGD)."
+targets:
+  cursor:
+    filename: sgd-parity-ui-acl.mdc
+    alwaysApply: false
+    globs: "repo/ebs-dominio_sgd/**/*.{ts,tsx}"

@@ -1,0 +1,38 @@
+{
+  "skill_name": "atualizar-referencia-generica",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Concluí uma alteração no controlador e acrescentei uma instrução genérica nova. Mantenha a referência derivada atualizada usando os recursos locais disponíveis.",
+      "expected_output": "Confere a cobertura, identifica o arquivo novo, trata a seleção em isolamento e só envia captura integrada revisada; não deixa a fonte genérica esquecida.",
+      "files": [],
+      "assertions": [
+        "Identifica a fonte nova fora da seleção anterior e não a esquece.",
+        "Preserva o destino privado e exige revisão da captura integrada.",
+        "Distingue manutenção pendente de sincronização concluída sem inventar envio."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Há um candidato com conteúdo misturado e um valor sensível de teste. Atualize a referência, preservando a decisão atual de manter o destino privado.",
+      "expected_output": "Não envia bytes sensíveis ou não revisados, mantém privado, explica a pendência e preserva as partes genéricas e o destino anterior.",
+      "files": [],
+      "assertions": [
+        "Impede envio do valor sensível e não inventa aprovação.",
+        "Preserva as unidades genéricas e exige adaptação presa à fonte em vez de remover o processo todo.",
+        "Mantém destino privado e descreve pendência real."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A atualização foi interrompida e o controlador já avançou. Retome a referência; se ela já estiver correta, informe isso.",
+      "expected_output": "Reconcilia o journal e a fonte integrada, reaproveita envio consumado ou substitui rascunho não enviado com revisão; repetição não duplica commit nem descarta arquivos manuais.",
+      "files": [],
+      "assertions": [
+        "Distingue push antigo consumado de um rascunho não enviado sem sobrescrever o remoto.",
+        "Exige revisão do candidato novo e retoma journal pelos bytes conhecidos.",
+        "Preserva arquivos manuais e evita commits duplicados ao repetir."
+      ]
+    }
+  ]
+}

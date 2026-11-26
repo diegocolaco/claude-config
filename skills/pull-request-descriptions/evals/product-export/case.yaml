@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: product-export
+expected_outcome: |
+  Descrição autossuficiente sobre exportação, fuso e refatoração, com antes/depois,
+  limites, impacto e separação entre testes relatados e download não verificado.
+  Não inventa motivação, comando de testes ou evidência de execução própria.

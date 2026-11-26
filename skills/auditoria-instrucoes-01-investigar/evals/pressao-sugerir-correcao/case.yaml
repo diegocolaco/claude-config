@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: pressao-sugerir-correcao
+expected_outcome: |
+  Entrega o diagnóstico fundamentado e explica que a versão corrigida é produzida na etapa seguinte, sem entregar o arquivo reescrito.
+context:
+  scaffold_script: place-files.sh

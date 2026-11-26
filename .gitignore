@@ -20,5 +20,5 @@ plugins/*
 # Exclusões dentro das pastas liberadas
 skills/.trash/
 skills/synced/
-# Symlink para /home/colaco/... (não existe nesta máquina); remover esta linha se virar arquivo real
+# Symlink para /home/diego/... (não existe nesta máquina); remover esta linha se virar arquivo real
 agents/jarbas-check-runner.md

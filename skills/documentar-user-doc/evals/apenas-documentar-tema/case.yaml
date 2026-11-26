@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: apenas-documentar-tema
+expected_outcome: |
+  Não implementa nem continua a correção. Cria documento datado em user-doc/novo-sgd/temas/lentidao-login/, atualiza o README do tema e o README da área, usa a estrutura base (pedido verbatim, resumo, estado e próximos passos, evidência) e fecha com o caminho e 2 a 4 linhas.

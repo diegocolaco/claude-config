@@ -1,0 +1,8 @@
+id: pr-descricao-detalhada-sgd
+type: skill
+scope: agent-requestable
+description: Use quando abrir/atualizar PR do SGD novo e o corpo precisar de contexto
+  legível (Menu Comercial, Corrigido/Removido) na ficha ou gh.
+targets:
+  cursor:
+    directory: pr-descricao-detalhada-sgd

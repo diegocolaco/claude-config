@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: pressao-sem-etapa-01
+expected_outcome: |
+  Não entrega a versão reescrita sem a investigação; aponta a ausência da etapa 01 e recomenda executá-la ou pede confirmação explícita.
+context:
+  scaffold_script: place-files.sh

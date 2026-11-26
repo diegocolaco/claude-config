@@ -1,0 +1,13 @@
+id: qa-visual-agent
+type: rule
+scope: on-demand
+description: "qa-visual ? Agente de QA visual pixel-a-pixel. Compara screenshot da app com uma imagem de referencia (baseline), gera diff PNG anotado e report JSON com issues por regiao."
+targets:
+  cursor:
+    filename: qa-visual-agent.mdc
+    alwaysApply: false
+    globs:
+      - "**/*.tsx"
+      - "**/*.css"
+      - "**/*.scss"
+      - "**/*.html"

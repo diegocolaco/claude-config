@@ -1,0 +1,12 @@
+id: spa-deploy-pre
+type: rule
+scope: agent-requestable
+description: >-
+  spa-deploy-pre — Ler ANTES de pedir merge/PR ou fechar ITEM do SGD novo com alteração em
+  apps/web (SPA, @sgd/web, Deploy Web, TS2322): rodar pnpm --filter @sgd/web run build no
+  worktree do ITEM; TST-STAMP com spa-build. Detalhe em ecosystem/profiles/sgd-novo/rules/spa-deploy-pre.md.
+targets:
+  cursor:
+    filename: spa-deploy-pre.mdc
+    alwaysApply: false
+    globs: null

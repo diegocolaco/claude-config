@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: defeitos-plantados
+expected_outcome: |
+  Diagnóstico com fontes oficiais: a regra sobre CLAUDE.md em subdiretórios é incorreta, a flag --auto-approve-all não existe, a exceção 'urgente' é brecha e a regra de testes está duplicada. Todas as regras são cobertas e nenhuma versão reescrita é entregue.
+context:
+  scaffold_script: place-files.sh

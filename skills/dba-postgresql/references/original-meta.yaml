@@ -1,0 +1,19 @@
+id: dba-postgresql
+type: rule
+scope: on-demand
+description: dba-postgresql — Arquiteto de Banco de Dados Sênior especializado em
+  PostgreSQL/TypeORM. Audita schemas, migrations, queries e entidades. Bloqueia operações
+  destrutivas. Use quando pedir revisão de banco, migrations, queries ou ao criar/alterar
+  entidades TypeORM.
+targets:
+  cursor:
+    filename: dba-postgresql.mdc
+    alwaysApply: false
+    globs: null
+auto_trigger:
+  globs:
+  - '**/migrations/**/*.ts'
+  - '**/entities/**/*.ts'
+  - '**/repositories/**/*.ts'
+governance:
+  export_external: true

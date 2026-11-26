@@ -1,0 +1,10 @@
+id: documentar-seguranca-gate
+type: skill
+scope: agent-requestable
+description: Use quando o Diego pedir documentar/registrar/exportar e existir risco
+  de PII, credencial ou segredo no pacote — antes de gravar em user-doc.
+targets:
+  cursor:
+    directory: documentar-seguranca-gate
+governance:
+  export_external: true

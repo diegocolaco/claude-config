@@ -1,0 +1,10 @@
+id: code-audit-workflow
+type: skill
+scope: agent-requestable
+description: Use quando o utilizador pedir auditoria de código, análise de cobertura
+  sistemática ou revisão estruturada de um escopo (Mapeamento, Inspeção, Consolidação).
+targets:
+  cursor:
+    directory: code-audit-workflow
+governance:
+  export_external: true

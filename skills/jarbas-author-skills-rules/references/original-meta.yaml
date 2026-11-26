@@ -1,0 +1,10 @@
+id: jarbas-author-skills-rules
+type: skill
+scope: agent-requestable
+description: Use quando criar, editar, mover ou promover skill, rule, SKILL.md, .mdc,
+  ou conteúdo em ecosystem/canonical/ ou ecosystem/profiles/.
+targets:
+  cursor:
+    directory: jarbas-author-skills-rules
+governance:
+  export_external: true

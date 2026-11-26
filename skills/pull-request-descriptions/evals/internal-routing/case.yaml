@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: internal-routing
+expected_outcome: |
+  Mantém os quatro títulos e #82; explica o fluxo antes/depois e o motivo documentado.
+  Distingue revisão documental de cenários ainda não executados. Não inventa ganho
+  medido ou impacto em aplicação. Preserva a limitação ao repositório e não publica.

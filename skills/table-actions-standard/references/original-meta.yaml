@@ -1,0 +1,11 @@
+id: table-actions-standard
+type: rule
+scope: on-demand
+description: "Padrao obrigatorio para colunas de acoes em dom-table (Dom DS). Define label, width, action-items e botoes para 1 ou 2 acoes, em Angular e React."
+targets:
+  cursor:
+    filename: table-actions-standard.mdc
+    alwaysApply: false
+    globs:
+      - "**/*.tsx"
+      - "**/*.html"

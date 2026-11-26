@@ -1,0 +1,10 @@
+id: best-practices-audit
+type: skill
+scope: agent-requestable
+description: Use quando auditar conformidade do workspace com o Manual de Boas Práticas
+  jarbas ou após mudanças amplas em rules/skills/automação.
+targets:
+  cursor:
+    directory: best-practices-audit
+governance:
+  export_external: true

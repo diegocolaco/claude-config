@@ -1,0 +1,8 @@
+id: documentar-user-doc
+type: skill
+scope: agent-requestable
+description: Use quando o Diego pedir documentar, apenas documentar, registre na documentação,
+  ou pausa com documentação em user-doc/.
+targets:
+  cursor:
+    directory: documentar-user-doc

@@ -1,0 +1,8 @@
+id: git-alteracoes-fantasma
+type: skill
+scope: agent-requestable
+description: Use quando git status/diff mostrar centenas ou milhares de ficheiros
+  sem edição intencional (line endings, materialize, permissões, ruído de worktree).
+targets:
+  cursor:
+    directory: git-alteracoes-fantasma

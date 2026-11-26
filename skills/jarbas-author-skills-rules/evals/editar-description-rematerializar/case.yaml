@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: editar-description-rematerializar
+expected_outcome: |
+  Edita a description no meta.yaml da fonte canonical (terceira pessoa, só gatilhos), roda
+  materialize.py, confere o diff só em saídas esperadas e comita fonte, saídas e manifesto.

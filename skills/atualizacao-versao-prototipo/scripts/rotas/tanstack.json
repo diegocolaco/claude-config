@@ -1,0 +1,34 @@
+{
+  "nome": "tanstack",
+  "rotulo": "TanStack Router",
+  "descricao": "TanStack Router: um arquivo por rota em src/routes (ou routesDirectory do tsr.config.json) e rotas por createRoute.",
+  "estrategia": "arquivos",
+  "prioridade": 30,
+  "marcas": {
+    "arquivos": ["tsr.config.json"],
+    "conteudo": "@tanstack/(react-)?(router|start)([^A-Za-z0-9_]|$)|(^|[^A-Za-z0-9_])create(Lazy)?FileRoute([^A-Za-z0-9_]|$)|(^|[^A-Za-z0-9_])createRootRoute|(^|[^A-Za-z0-9_])createRoute([^A-Za-z0-9_]|$)"
+  },
+  "aliases": {"@/": "src/"},
+  "pasta": "src/routes",
+  "extensoes": [".tsx", ".ts", ".jsx", ".js"],
+  "config": {"arquivo": "tsr.config.json", "chave_pasta": "routesDirectory"},
+  "gerado": "routeTree.gen",
+  "marca_da_pasta": "@tanstack/(?:react-)?(?:router|start)\\b|\\bcreate(?:Lazy)?FileRoute\\b|\\bcreateRootRoute",
+  "segmento": {
+    "separador": ".",
+    "sem_caminho": "_",
+    "sem_aninhamento": "_",
+    "ignorado": "-",
+    "grupo": ["(", ")"],
+    "layout": "route",
+    "raiz": "__root",
+    "indice": "index",
+    "sufixo_lazy": ".lazy",
+    "parametro": "$",
+    "nao_rota": [".d", ".gen", ".test", ".spec"]
+  },
+  "chaves": {"componente": "component", "servidor": "server", "caminho": "path", "id": "id", "pai": "getParentRoute"},
+  "lazy_funcao": "lazyRouteComponent",
+  "outlet": "Outlet",
+  "criador": "createRoute"
+}

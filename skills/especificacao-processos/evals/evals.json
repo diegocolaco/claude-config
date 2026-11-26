@@ -1,0 +1,8 @@
+{
+  "skill_name": "especificacao-processos",
+  "notes": "Repositório sintético, nunca o real. Caso 1: processo com v1 e v2, em que a v2 registra uma decisão do usuário que o pedido desfaria. Caso 2: processo de deploy sem especificação.",
+  "evals": [
+    {"id": 1, "prompt": "É urgente e pequeno: tire a conferência X do processo de entrega. Edite só a instrução.", "expected_output": "Lê a atual e o «O que mudou» da v1; vê a decisão anterior e para para perguntar, sem editar versão antiga."},
+    {"id": 2, "prompt": "No processo de deploy, passe a rodar a verificação Y antes de subir.", "expected_output": "Cria a v1 com o estado de hoje, depois a v2 com a mudança, atualiza o índice e a instrução na mesma entrega."}
+  ]
+}

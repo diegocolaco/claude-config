@@ -1,0 +1,11 @@
+id: e2e-coverage-reuse-guard
+type: skill
+scope: agent-requestable
+description: Use quando um ITEM, bugfix ou melhoria do SGD novo for criar, estender,
+  mover, apagar ou enfraquecer spec Playwright em tests/e2e (jornada ou paridade-dual),
+  ao escolher as --journey/--dual-spec do sgd-env item-test, quando o PREFLIGHT acusar
+  e2e-coverage-reuse-guard, ou quando o reviewer precisar conferir duplicação de cenário,
+  spec com nome de ITEM ou regressão não selecionada.
+targets:
+  cursor:
+    directory: e2e-coverage-reuse-guard

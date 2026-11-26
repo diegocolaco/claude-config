@@ -1,0 +1,10 @@
+id: context-continuity
+type: skill
+scope: agent-requestable
+description: Use quando retomar trabalho em chat novo com continuidade de outra sessão,
+  ou quando precisar de RESUMO/estado sem reler o fio inteiro.
+targets:
+  cursor:
+    directory: context-continuity
+governance:
+  export_external: true

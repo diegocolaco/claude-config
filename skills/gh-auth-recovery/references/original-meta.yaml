@@ -1,0 +1,16 @@
+id: gh-auth-recovery
+type: rule
+scope: on-demand
+description: 'Ler quando `gh` ou `git` falharem por falta de autenticação ou autorização
+  (gh: "not logged into any GitHub hosts", git push/pull pedindo credencial, 401/403,
+  "Resource protected by organization SAML enforcement"): diagnosticar antes de tentar
+  login, preferir device flow, pedir Personal Access Token com o escopo mínimo só
+  se o device flow for bloqueado, e tratar SAML SSO como caso à parte que exige o
+  humano autorizar o token na org pelo browser.'
+targets:
+  cursor:
+    filename: gh-auth-recovery.mdc
+    alwaysApply: false
+    globs: null
+governance:
+  export_external: true

@@ -1,0 +1,9 @@
+id: governed-items-portfolio-analysis
+type: skill
+scope: agent-requestable
+description: >-
+  Analisar portfólio de ITEMs (ITENS.md, fichas, evidências, paridade).
+  Use com comandos /items-* para relatórios de governança — somente leitura.
+targets:
+  cursor:
+    directory: governed-items-portfolio-analysis

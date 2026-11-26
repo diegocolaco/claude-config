@@ -1,0 +1,22 @@
+{
+  "nome": "react-router",
+  "rotulo": "React Router",
+  "descricao": "React Router: tags <Route path element> e listas de objetos (createBrowserRouter, useRoutes) nos arquivos de entrada.",
+  "estrategia": "jsx",
+  "prioridade": 20,
+  "marcas": {
+    "arquivos": ["src/App.tsx", "src/main.tsx", "src/routes.tsx", "src/router.tsx", "src/routes/index.tsx", "src/router/index.tsx"]
+  },
+  "aliases": {"@/": "src/"},
+  "arquivos": ["src/App.tsx", "src/main.tsx", "src/routes.tsx", "src/router.tsx", "src/routes/index.tsx", "src/router/index.tsx"],
+  "tag": "Route",
+  "atributos": {
+    "caminho": "path", "elemento": "element", "componente": "Component", "indice": "index", "lazy": "lazy", "filhas": "children"
+  },
+  "listas": [
+    "(?:createBrowserRouter|createHashRouter|createMemoryRouter|useRoutes)\\(\\s*\\[",
+    "RouteObject\\[\\]\\s*=\\s*\\[",
+    "\\b(?:const|let)\\s+\\w*[Rr]outes?\\w*\\s*(?::[^=]+)?=\\s*\\["
+  ],
+  "nao_tela": ["Navigate", "Outlet"]
+}

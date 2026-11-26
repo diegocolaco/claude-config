@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: reescrita-rastreada
+expected_outcome: |
+  Falhas críticas ligadas aos achados da investigação e versão reescrita completa em arquivo separado, com cada mudança rastreada até uma falha, preservando as regras sem falha e sem ênfase em caixa alta.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,10 @@
+id: analises-documentadas
+type: skill
+scope: agent-requestable
+description: Use quando o Diego pedir análise (gargalos, lentidão, causa de erro,
+  comparação, eficiência, auditoria, levantamento) ou conclusões forem para user-doc/analises-documentadas.
+targets:
+  cursor:
+    directory: analises-documentadas
+governance:
+  export_external: true

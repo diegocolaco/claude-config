@@ -1,0 +1,13 @@
+id: task-reliability
+type: rule
+scope: on-demand
+description: Quality gate for development tasks and task automation.
+targets:
+  cursor:
+    filename: task-reliability.mdc
+    alwaysApply: false
+    globs:
+      - "**/.vscode/tasks.json"
+      - "**/*.code-workspace"
+      - "**/Taskfile.yml"
+      - "**/Taskfile.yaml"

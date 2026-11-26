@@ -1,0 +1,10 @@
+id: import-governanca-item-integracao
+type: skill
+scope: agent-requestable
+description: Use quando reimportar propostas do modelo externo sobre integração de
+  ITEM para ficheiros fonte do playground.
+targets:
+  cursor:
+    directory: import-governanca-item-integracao
+governance:
+  export_external: true

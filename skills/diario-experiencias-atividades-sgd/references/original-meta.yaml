@@ -1,0 +1,9 @@
+id: diario-experiencias-atividades-sgd
+type: skill
+scope: agent-requestable
+description: >-
+  Use quando usar /registro-atividades, /experiencia-sgd, ou pedido de atualizar diário
+  de experiências e atividades diárias do SGD novo.
+targets:
+  cursor:
+    directory: diario-experiencias-atividades-sgd

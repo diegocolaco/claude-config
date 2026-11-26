@@ -1,0 +1,100 @@
+{
+  "skill_name": "descoberta-em-ondas",
+  "notes": "As execuções com e sem skill têm a skill atualizacao-versao-prototipo como principal (a da versão nova com, a do main sem). O gabarito fica fora do diretório da execução. Casos grandes disparam agentes de leitura por unidade.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "grande-incremental-v10-v11",
+      "classe": "dificil",
+      "setup": "python3 ../atualizacao-versao-prototipo/evals/files/montar_versoes.py <dir> --tamanho grande --cenario com-catalogo --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "Chegou a v11 do protótipo: está no branch `v11` do repositório em {PROTOTIPO}; a vigente (v10) é a do `main`. O SGD fica em {PRODUTO} e já tem o catálogo de paridade da v10. É uma versão grande, mexeu em muita tela. Faz o incremental do que mudou.",
+      "expected_output": "INCREMENTAL. Mapa com peso acima do orçamento; ondas com unidades conferidas; achados conferidos antes de integrar; catálogo com as diferenças do gabarito, incluindo as iscas, o Filtro e as chaves de texto; linha de cobertura; parada antes do plano.",
+      "files": [
+        "../atualizacao-versao-prototipo/evals/files/montar_versoes.py"
+      ],
+      "expectations": [
+        "O mapa de cobertura rodou e o caminho escolhido foi ondas porque cabe_em_um_agente é false (ou, sem a skill, o resumo diz como a versão foi dividida)",
+        "A onda 0 montou as unidades com `cobertura.py unidades --propor` e a conferência de unidades saiu 0 antes de despachar agentes, sem ler o patch das telas antes disso",
+        "No máximo 6 agentes de leitura rodaram ao mesmo tempo, cada um com uma unidade",
+        "`cobertura.py achados` rodou para cada unidade antes de integrar os achados dela",
+        "Só a sessão principal escreveu no catálogo; os agentes de unidade só gravaram arquivos de achados",
+        "`cobertura.py rastreio` rodou sobre o acumulado com saída 0, ou os faltantes aparecem no resumo",
+        "Pelo menos 90% das diferenças do gabarito estão no catálogo novo",
+        "As duas iscas do gabarito (mensagem do CNPJ em Fornecedores; coluna Custo atrás de permissão em Produtos) estão no catálogo, ou aparecem listadas como omissão ou NAO_INVESTIGADO",
+        "A tela removida da v11 tem destino (diferença ou sobra) no catálogo ou no resumo",
+        "O efeito do Filtro alterado aparece nas 6 telas que o usam sem diff próprio, e as chaves de texto alteradas aparecem ligadas às 3 telas que as consomem",
+        "O resumo traz a linha de cobertura com o caminho «ondas», o número de unidades e de ondas",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "O main do protótipo e o main do produto terminam no mesmo commit em que começaram",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "grande-full-v10-v11",
+      "classe": "dificil",
+      "setup": "python3 ../atualizacao-versao-prototipo/evals/files/montar_versoes.py <dir> --tamanho grande --cenario sem-catalogo --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "Saiu a v11 do protótipo, no branch `v11` em {PROTOTIPO}; hoje usamos a do `main` (v10). O SGD fica em {PRODUTO}. Quero saber tudo o que mudou e o que o SGD precisa mudar pra ficar igual; foi uma versão grande.",
+      "expected_output": "FULL sem perguntar (sem catálogo). Mesmo caminho por ondas; catálogo criado em branch com baseline trusted false; inventário inverso; linha de cobertura.",
+      "files": [
+        "../atualizacao-versao-prototipo/evals/files/montar_versoes.py"
+      ],
+      "expectations": [
+        "O modo é FULL e a resposta não pergunta ao Diego qual modo usar",
+        "O mapa de cobertura rodou e o caminho escolhido foi ondas porque cabe_em_um_agente é false (ou, sem a skill, o resumo diz como a versão foi dividida)",
+        "A onda 0 montou as unidades com `cobertura.py unidades --propor` e a conferência de unidades saiu 0 antes de despachar agentes, sem ler o patch das telas antes disso",
+        "No máximo 6 agentes de leitura rodaram ao mesmo tempo, cada um com uma unidade",
+        "`cobertura.py achados` rodou para cada unidade antes de integrar os achados dela",
+        "Só a sessão principal escreveu no catálogo; os agentes de unidade só gravaram arquivos de achados",
+        "`cobertura.py rastreio` rodou sobre o acumulado com saída 0, ou os faltantes aparecem no resumo",
+        "Pelo menos 90% das diferenças do gabarito estão no catálogo novo",
+        "As duas iscas do gabarito (mensagem do CNPJ em Fornecedores; coluna Custo atrás de permissão em Produtos) estão no catálogo, ou aparecem listadas como omissão ou NAO_INVESTIGADO",
+        "A tela removida da v11 tem destino (diferença ou sobra) no catálogo ou no resumo",
+        "O efeito do Filtro alterado aparece nas 6 telas que o usam sem diff próprio, e as chaves de texto alteradas aparecem ligadas às 3 telas que as consomem",
+        "O resumo traz a linha de cobertura com o caminho «ondas», o número de unidades e de ondas",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "O main do protótipo e o main do produto terminam no mesmo commit em que começaram",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "achado-cortado",
+      "classe": "simples",
+      "setup": "fixture grande com-catalogo + mapa, unidades e achados da onda 1 prontos em <dir>/tmp; o arquivo de achados de uma unidade omite um trecho",
+      "prompt": "A onda 1 da descoberta da v11 terminou. Os arquivos estão em {RUN}/tmp: o mapa (mapa.json), as unidades (unidades.json) e os achados da onda (achados/). O catálogo fica no worktree {PRODUTO_WT}. Integra a onda 1 no catálogo.",
+      "expected_output": "Roda `achados` para cada unidade da onda; a unidade com trecho sem destino não é integrada e volta à unidade (redespacho ou pedido explícito) com os problemas; as demais podem ser integradas; rastreio acusa o faltante.",
+      "files": [],
+      "expectations": [
+        "`cobertura.py achados` rodou para cada unidade da onda 1 antes de qualquer escrita no catálogo",
+        "A unidade cujo arquivo omite um trecho não teve nada integrado no catálogo",
+        "A resposta devolve essa unidade para nova leitura (ou redespacha) citando o trecho sem destino",
+        "As unidades cujo arquivo passou na conferência foram integradas, ou a resposta explica por que não",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "grande-full-irmas",
+      "classe": "dificil",
+      "setup": "python3 ../atualizacao-versao-prototipo/evals/files/montar_versoes.py <dir> --tamanho grande --cenario sem-catalogo --variante irmas --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "Saiu a v11 do protótipo, no branch `v11` em {PROTOTIPO}; hoje usamos a do `main` (v10). O SGD fica em {PRODUTO}. Quero saber tudo o que mudou e o que o SGD precisa mudar pra ficar igual; foi uma versão grande.",
+      "expected_output": "FULL sem perguntar, pelo caminho por ondas. Depois do omissoes, o cruzamento entre telas (`cobertura.py cruzar --unidades`) roda e cada suspeita forte vira diferença INCONSISTENCIA-PROTO aberta, sem requisito e sem ser descartada; as decisões do Diego no resumo trazem as inconsistências entre telas.",
+      "files": [
+        "../atualizacao-versao-prototipo/evals/files/montar_versoes.py",
+        "../atualizacao-versao-prototipo/evals/files/variante_irmas.py"
+      ],
+      "expectations": [
+        "`cobertura.py cruzar` rodou depois do `omissoes` e antes do inventário inverso e do resumo, com `--unidades`",
+        "Toda suspeita forte do `cruzamentos.json` virou diferença `classe: INCONSISTENCIA-PROTO` com `cruzamento` igual à assinatura, aberta, sem requisito e com todas as telas em `surface_ids`; o `rastreio` final com `--cruzamentos` saiu 0",
+        "E1 (margemContribuicao: guarda em Margem por cliente, sem guarda em Rentabilidade) está no catálogo e o resumo cita Margem por cliente como fora do mapa",
+        "E3 (literais «centro de resultado» ao lado da chave trocada) está ligada às 2 telas, Comissões da equipe e Orçamento anual, que ficam em grupos de rota diferentes",
+        "P1 (comissaoPrevista) e P2 (tooltip «Antes chamado de centro de resultado») aparecem nas decisões do Diego, e nenhum requisito põe ou tira guarda nem troca o tooltip",
+        "Nenhuma diferença com `cruzamento` cita F1 a F7 do gabarito (defaultMessage, coluna logo abaixo do render com guarda, canExportar, tela com guarda de rota, status, «Valor máximo: 999.999» e o canExcluir dos botões)",
+        "E4: nenhuma frase do `requisito_errado` do gabarito («Informe a unidade de negócio», «Selecione a unidade de negócio») está em algum `produto_precisa` do catálogo, e toda diferença em `afeta_df` de E1 e E3 tem `depende_de`",
+        "As decisões do Diego no resumo trazem as inconsistências entre telas, com cada suspeita forte (pergunta, telas, afetadas) e a contagem de fracas e preexistentes",
+        "Nada foi escrito em ~/projetos/repo; nenhum comando roda npm, npx, playwright, curl ou servidor; os `main` do protótipo e do produto terminam onde começaram"
+      ]
+    }
+  ]
+}

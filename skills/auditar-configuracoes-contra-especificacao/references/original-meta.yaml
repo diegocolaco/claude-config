@@ -1,0 +1,9 @@
+id: auditar-configuracoes-contra-especificacao
+type: skill
+scope: agent-requestable
+description: Use quando o diff tocar configuração do processo Jarbas (skills, rules,
+  agents, hooks, perfis, materializadores) e existir ponto de revisão — não em entrega
+  rotineira de produto sem mudança de config.
+targets:
+  cursor:
+    directory: auditar-configuracoes-contra-especificacao

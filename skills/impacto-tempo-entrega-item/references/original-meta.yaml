@@ -1,0 +1,8 @@
+id: impacto-tempo-entrega-item
+type: skill
+scope: agent-requestable
+description: Use quando alterar processo de entrega ITEM SGD (nova etapa, gate, harness,
+  /sgd-entrega) e precisar estimar impacto em tempo.
+targets:
+  cursor:
+    directory: impacto-tempo-entrega-item

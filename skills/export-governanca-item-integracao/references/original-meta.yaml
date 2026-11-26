@@ -1,0 +1,10 @@
+id: export-governanca-item-integracao
+type: skill
+scope: agent-requestable
+description: Use quando exportar pacote de governança ITEM (Superpowers × Jarbas ×
+  protótipo × entrega) para modelo externo ou revisão.
+targets:
+  cursor:
+    directory: export-governanca-item-integracao
+governance:
+  export_external: true

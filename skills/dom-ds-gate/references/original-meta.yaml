@@ -1,0 +1,13 @@
+id: dom-ds-gate
+type: rule
+scope: on-demand
+description: "dom-ds-gate - valida se alteracoes de UI usam @onviobr/dom-components (Dom DS); cobre consumo em Angular e React/Vite; se nao houver componente, pergunta ao humano (A/B/C)."
+targets:
+  cursor:
+    filename: dom-ds-gate.mdc
+    alwaysApply: false
+    globs:
+      - "**/*.tsx"
+      - "**/*.html"
+      - "**/*.scss"
+      - "**/*.css"

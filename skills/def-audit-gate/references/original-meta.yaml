@@ -1,0 +1,8 @@
+id: def-audit-gate
+type: skill
+scope: agent-requestable
+description: Use when SGD novo has received definition vs Lovable/SDD mismatch, DEF-AUDIT,
+  paridade de definição, MP-001, or confrontar protótipo antes de PO/developer.
+targets:
+  cursor:
+    directory: def-audit-gate

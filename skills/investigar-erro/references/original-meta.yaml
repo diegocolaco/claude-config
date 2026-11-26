@@ -1,0 +1,10 @@
+id: investigar-erro
+type: skill
+scope: agent-requestable
+description: >-
+  Use quando houver erro no DEV remoto do SGD novo: «erro no DEV», «não funciona no DEV», 404 no DEV, toast ou
+  traceId de erro, reproduzir bug, EVIDENCIA-ERRO.md, gate 1c do /sgd-entrega, 11c DEV-REMOTO, fase 1 do
+  /diagnostico-causa-raiz ou /investigar-erro, antes de propor qualquer correção.
+targets:
+  cursor:
+    directory: investigar-erro

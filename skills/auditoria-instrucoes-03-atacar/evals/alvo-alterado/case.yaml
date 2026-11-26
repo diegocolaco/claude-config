@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: alvo-alterado
+expected_outcome: |
+  Detecta que o regras-agente.md mudou depois da investigação e avisa que a auditoria está desatualizada antes de qualquer versão final.
+context:
+  scaffold_script: place-files.sh

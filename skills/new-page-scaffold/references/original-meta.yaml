@@ -1,0 +1,8 @@
+id: new-page-scaffold
+type: skill
+scope: agent-requestable
+description: Use ao criar nova página, listagem, formulário ou shell UI com Dom DS
+  (Angular ou React/Vite) no SGD novo.
+targets:
+  cursor:
+    directory: new-page-scaffold

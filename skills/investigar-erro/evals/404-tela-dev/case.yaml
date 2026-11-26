@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: 404-tela-dev
+expected_outcome: |
+  Plano de investigação com reprodução multi-usuário no DEV antes do Datadog,
+  matriz gravada em EVIDENCIA-ERRO.md, investigador com janela BRT e UTC,
+  e nenhuma correção antes do veredito.

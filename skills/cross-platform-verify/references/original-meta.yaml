@@ -1,0 +1,10 @@
+id: cross-platform-verify
+type: skill
+scope: agent-requestable
+description: Use when changed paths include tasks, automation scripts, workspace shell,
+  or cross-platform docs and platform-check must run before declaring done.
+targets:
+  cursor:
+    directory: cross-platform-verify
+governance:
+  export_external: true

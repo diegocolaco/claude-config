@@ -1,0 +1,12 @@
+id: aplicar-especificacao-nas-configuracoes
+type: skill
+scope: agent-requestable
+description: >-
+  Use ao criar, alterar, importar, reconciliar ou exportar o processo Jarbas, suas
+  skills, rules, agents, hooks, perfis ou materializadores; também ao reconciliar
+  diferença material entre o processo previsto e executado. Inclui mudanças locais e
+  pacotes externos. Não acionar por entrega rotineira de produto, consulta ou auditoria
+  sem mudança ou divergência material.
+targets:
+  cursor:
+    directory: aplicar-especificacao-nas-configuracoes

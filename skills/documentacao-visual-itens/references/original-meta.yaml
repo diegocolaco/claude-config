@@ -1,0 +1,8 @@
+id: documentacao-visual-itens
+type: skill
+scope: agent-requestable
+description: Use quando documentar visualmente investigação ou desenvolvimento de
+  ITEM (diagramas, fluxos, evidência verificável para user-doc).
+targets:
+  cursor:
+    directory: documentacao-visual-itens

@@ -1,0 +1,8 @@
+id: wsl-ubuntu-resource-analysis
+type: skill
+scope: agent-requestable
+description: Use quando pedir análise geral de recursos do Ubuntu/WSL (CPU, memória,
+  swap, disco, Docker, processos pesados).
+targets:
+  cursor:
+    directory: wsl-ubuntu-resource-analysis

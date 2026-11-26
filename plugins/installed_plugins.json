@@ -4,8 +4,8 @@
     "claude-md-management@claude-plugins-official": [
       {
         "scope": "project",
-        "projectPath": "/home/colaco/projetos",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-md-management/1.0.0",
+        "projectPath": "/home/diego/projetos",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-md-management/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-10-30T21:38:47.530Z",
         "lastUpdated": "2026-10-30T21:38:47.530Z",
@@ -25,7 +25,7 @@
     "claude-code-setup@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-10-30T21:40:34.178Z",
         "lastUpdated": "2026-10-30T21:40:34.178Z",
@@ -33,8 +33,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T14:09:29.481Z",
         "lastUpdated": "2026-11-08T14:09:29.481Z",
@@ -42,8 +42,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T17:55:03.565Z",
         "lastUpdated": "2026-11-08T17:55:03.565Z",
@@ -51,8 +51,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T18:03:38.024Z",
         "lastUpdated": "2026-11-08T18:03:38.024Z",
@@ -60,8 +60,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T18:03:45.096Z",
         "lastUpdated": "2026-11-08T18:03:45.096Z",
@@ -69,8 +69,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T19:50:54.380Z",
         "lastUpdated": "2026-11-08T19:50:54.380Z",
@@ -78,8 +78,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T19:50:57.770Z",
         "lastUpdated": "2026-11-08T19:50:57.770Z",
@@ -87,8 +87,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T19:51:01.226Z",
         "lastUpdated": "2026-11-08T19:51:01.226Z",
@@ -96,8 +96,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T20:39:57.518Z",
         "lastUpdated": "2026-11-08T20:39:57.518Z",
@@ -105,8 +105,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-08T20:40:00.757Z",
         "lastUpdated": "2026-11-08T20:40:00.757Z",
@@ -115,7 +115,7 @@
       {
         "scope": "local",
         "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-21T13:45:09.600Z",
         "lastUpdated": "2026-11-21T13:45:09.600Z",
@@ -123,12 +123,12 @@
       },
       {
         "scope": "local",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-11-21T16:03:51.580Z",
         "lastUpdated": "2026-11-21T16:03:51.580Z",
-        "gitCommitSha": "a7ba5b93db0c7c8d17f3f1d25853adca79598a1a",
-        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles"
+        "gitCommitSha": "a7ba5b93db0c7c8d17f3f1d25853adca79598a1a"
       }
     ],
     "superpowers@claude-plugins-official": [
@@ -142,17 +142,17 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
-        "version": "7.0.0",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.2",
+        "version": "7.0.2",
         "installedAt": "2026-10-31T17:46:31.376Z",
-        "lastUpdated": "2026-10-31T17:46:31.376Z",
-        "gitCommitSha": "bb92a77741419a4ab5f06e711a283343f1ada0c3"
+        "lastUpdated": "2026-11-21T20:04:57.746Z",
+        "gitCommitSha": "22f0b463e7a5e579904dd6211a520321035526f7"
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhpieA4Qn5KFp33baZRq",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhpieA4Qn5KFp33baZRq",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T18:26:30.143Z",
         "lastUpdated": "2026-10-31T18:26:30.143Z",
@@ -160,8 +160,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhpgpCFAreUrMQFfYR8c",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhpgpCFAreUrMQFfYR8c",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T18:40:41.079Z",
         "lastUpdated": "2026-10-31T18:40:41.079Z",
@@ -169,8 +169,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhphXWRMBpeNjjisD84t",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhphXWRMBpeNjjisD84t",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T18:47:05.746Z",
         "lastUpdated": "2026-10-31T18:47:05.746Z",
@@ -178,8 +178,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhpiGcGPM7o1gHdRRi37",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground/.claude/worktrees/bridge-cse_013wFhpiGcGPM7o1gHdRRi37",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T19:00:41.449Z",
         "lastUpdated": "2026-10-31T19:00:41.449Z",
@@ -187,7 +187,7 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpijyJ9AVLfu5wML6G9",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpijyJ9AVLfu5wML6G9",
         "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.2",
         "version": "7.0.2",
         "installedAt": "2026-10-31T19:47:29.515Z",
@@ -196,8 +196,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpi2tkw7fC2BeAotWkS",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpi2tkw7fC2BeAotWkS",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T20:11:23.696Z",
         "lastUpdated": "2026-10-31T20:11:23.696Z",
@@ -205,8 +205,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpkgGrwKuSPKQg1cEQu",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpkgGrwKuSPKQg1cEQu",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T22:28:11.567Z",
         "lastUpdated": "2026-10-31T22:28:11.567Z",
@@ -214,8 +214,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhphPm6GAnPifac1sBwH",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhphPm6GAnPifac1sBwH",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T23:08:38.624Z",
         "lastUpdated": "2026-10-31T23:08:38.624Z",
@@ -223,8 +223,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/ciclo-versao-prototipo/.cache/skill-authoring/atualizacao-versao-prototipo/trigger-sandbox",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/ciclo-versao-prototipo/.cache/skill-authoring/atualizacao-versao-prototipo/trigger-sandbox",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-10-31T23:59:53.720Z",
         "lastUpdated": "2026-10-31T23:59:53.720Z",
@@ -232,8 +232,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpgjisNWMDS7LGHhG9C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpgjisNWMDS7LGHhG9C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-01T01:43:08.377Z",
         "lastUpdated": "2026-11-01T01:43:08.377Z",
@@ -241,8 +241,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpiTNAwDgqg746WRFQ9",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpiTNAwDgqg746WRFQ9",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-01T02:02:54.843Z",
         "lastUpdated": "2026-11-01T02:02:54.843Z",
@@ -250,8 +250,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpk6kjze4WE1g9nFwU2",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpk6kjze4WE1g9nFwU2",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-01T02:36:48.708Z",
         "lastUpdated": "2026-11-01T02:36:48.708Z",
@@ -259,8 +259,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhph3kZv83tWcZ7FHLBh",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhph3kZv83tWcZ7FHLBh",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-01T05:10:51.781Z",
         "lastUpdated": "2026-11-01T05:10:51.781Z",
@@ -268,8 +268,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpjvzrqJqXLRqxR36kU",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpjvzrqJqXLRqxR36kU",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-01T15:36:52.428Z",
         "lastUpdated": "2026-11-01T15:36:52.428Z",
@@ -277,8 +277,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/comandos-chats-paridade-20261102",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/comandos-chats-paridade-20261102",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-02T11:52:55.560Z",
         "lastUpdated": "2026-11-02T11:52:55.560Z",
@@ -286,8 +286,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/comandos-adocao-baseline-20261102",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/comandos-adocao-baseline-20261102",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-02T12:14:42.423Z",
         "lastUpdated": "2026-11-02T12:14:42.423Z",
@@ -295,8 +295,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpiYs4ZUJbqimb4dcua",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpiYs4ZUJbqimb4dcua",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-02T13:26:48.703Z",
         "lastUpdated": "2026-11-02T13:26:48.703Z",
@@ -304,8 +304,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/task-implementer-descoberta-skills",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/task-implementer-descoberta-skills",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-02T16:31:01.781Z",
         "lastUpdated": "2026-11-02T16:31:01.781Z",
@@ -313,8 +313,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/auditoria-busca-skills-agents",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/auditoria-busca-skills-agents",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-02T18:18:31.843Z",
         "lastUpdated": "2026-11-02T18:18:31.843Z",
@@ -322,8 +322,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhphVU9dk4qi2vrNyQWA",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhphVU9dk4qi2vrNyQWA",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-02T22:49:42.332Z",
         "lastUpdated": "2026-11-02T22:49:42.332Z",
@@ -331,8 +331,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/agents-sem-conflito",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/agents-sem-conflito",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T00:07:26.384Z",
         "lastUpdated": "2026-11-03T00:07:26.384Z",
@@ -340,8 +340,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpjmufNMCC8YsZcK4hC",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpjmufNMCC8YsZcK4hC",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T00:45:45.378Z",
         "lastUpdated": "2026-11-03T00:45:45.378Z",
@@ -349,8 +349,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpkbswiL9rJVFgVTd1f",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpkbswiL9rJVFgVTd1f",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T01:03:07.125Z",
         "lastUpdated": "2026-11-03T01:03:07.125Z",
@@ -358,8 +358,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhphfHFF7pVdZksgUWq5",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhphfHFF7pVdZksgUWq5",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T01:39:54.321Z",
         "lastUpdated": "2026-11-03T01:39:54.321Z",
@@ -367,8 +367,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpgbNp5Fj7HZJohVYL9",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpgbNp5Fj7HZJohVYL9",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T04:39:37.595Z",
         "lastUpdated": "2026-11-03T04:39:37.595Z",
@@ -376,8 +376,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpii1j6XJ3Wc8ZZWYa2",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpii1j6XJ3Wc8ZZWYa2",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T04:49:39.481Z",
         "lastUpdated": "2026-11-03T04:49:39.481Z",
@@ -385,8 +385,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpiYGbBmkg1wfQVFEZr",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpiYGbBmkg1wfQVFEZr",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T12:15:37.170Z",
         "lastUpdated": "2026-11-03T12:15:37.170Z",
@@ -394,8 +394,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpgtkLyAnHLtgJsgbiM",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpgtkLyAnHLtgJsgbiM",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T12:33:42.867Z",
         "lastUpdated": "2026-11-03T12:33:42.867Z",
@@ -403,8 +403,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpgv3UmE8keR9e7cJfh",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpgv3UmE8keR9e7cJfh",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T12:49:00.132Z",
         "lastUpdated": "2026-11-03T12:49:00.132Z",
@@ -412,8 +412,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpm5myWDKEZJR6noqv2",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpm5myWDKEZJR6noqv2",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T13:29:43.855Z",
         "lastUpdated": "2026-11-03T13:29:43.855Z",
@@ -421,8 +421,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpmMG9S3XR3YjnEBiNy",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpmMG9S3XR3YjnEBiNy",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T13:52:17.055Z",
         "lastUpdated": "2026-11-03T13:52:17.055Z",
@@ -430,8 +430,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhphbV37qTQ6jPbzRYYs",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhphbV37qTQ6jPbzRYYs",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T14:01:19.643Z",
         "lastUpdated": "2026-11-03T14:01:19.643Z",
@@ -439,8 +439,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpjZyKAL881s8twBcZJ",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpjZyKAL881s8twBcZJ",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T14:45:01.916Z",
         "lastUpdated": "2026-11-03T14:45:01.916Z",
@@ -448,8 +448,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhph6juxLz5wTrtxvLAY",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhph6juxLz5wTrtxvLAY",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T15:10:35.967Z",
         "lastUpdated": "2026-11-03T15:10:35.967Z",
@@ -457,8 +457,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpjKSD2aaF4Rp8QJZMt",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpjKSD2aaF4Rp8QJZMt",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T15:47:33.460Z",
         "lastUpdated": "2026-11-03T15:47:33.460Z",
@@ -466,8 +466,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpkemKUbkNbgfh3P6Zj",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpkemKUbkNbgfh3P6Zj",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T17:01:35.803Z",
         "lastUpdated": "2026-11-03T17:01:35.803Z",
@@ -475,8 +475,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhphR9gjVLYnT5T3xy1X",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhphR9gjVLYnT5T3xy1X",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-03T23:28:48.435Z",
         "lastUpdated": "2026-11-03T23:28:48.435Z",
@@ -484,8 +484,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpmL4D61qkxEQEnddfz",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpmL4D61qkxEQEnddfz",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-04T01:52:58.307Z",
         "lastUpdated": "2026-11-04T01:52:58.307Z",
@@ -493,8 +493,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpjwKwtDcPNNdkT4PXN",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpjwKwtDcPNNdkT4PXN",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-04T02:37:12.895Z",
         "lastUpdated": "2026-11-04T02:37:12.895Z",
@@ -502,8 +502,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpj2ZCghVLYDL8S28Y6",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpj2ZCghVLYDL8S28Y6",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-04T13:15:54.656Z",
         "lastUpdated": "2026-11-04T13:15:54.656Z",
@@ -512,7 +512,7 @@
       {
         "scope": "local",
         "projectPath": "/var/tmp/ajuste-aderencia/squad",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-05T00:35:24.980Z",
         "lastUpdated": "2026-11-05T00:35:24.980Z",
@@ -520,8 +520,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/ajuste-biblioteca-opcional-20261106",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/ajuste-biblioteca-opcional-20261106",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-06T03:34:13.961Z",
         "lastUpdated": "2026-11-06T03:34:13.961Z",
@@ -529,8 +529,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bridge-cse_013wFhpk6hmKujpzdmqCuQVd",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bridge-cse_013wFhpk6hmKujpzdmqCuQVd",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-06T19:04:57.900Z",
         "lastUpdated": "2026-11-06T19:04:57.900Z",
@@ -538,8 +538,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T17:55:03.565Z",
         "lastUpdated": "2026-11-08T17:55:03.565Z",
@@ -547,8 +547,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T18:03:38.024Z",
         "lastUpdated": "2026-11-08T18:03:38.024Z",
@@ -556,8 +556,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T18:03:45.096Z",
         "lastUpdated": "2026-11-08T18:03:45.096Z",
@@ -565,8 +565,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T19:50:54.380Z",
         "lastUpdated": "2026-11-08T19:50:54.380Z",
@@ -574,8 +574,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T19:50:57.770Z",
         "lastUpdated": "2026-11-08T19:50:57.770Z",
@@ -583,8 +583,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T19:51:01.226Z",
         "lastUpdated": "2026-11-08T19:51:01.226Z",
@@ -592,8 +592,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T20:39:57.518Z",
         "lastUpdated": "2026-11-08T20:39:57.518Z",
@@ -601,8 +601,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.0",
         "version": "7.0.0",
         "installedAt": "2026-11-08T20:40:00.757Z",
         "lastUpdated": "2026-11-08T20:40:00.757Z",
@@ -619,28 +619,28 @@
       },
       {
         "scope": "local",
+        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles",
         "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/superpowers/7.0.2",
         "version": "7.0.2",
         "installedAt": "2026-11-21T16:03:51.580Z",
         "lastUpdated": "2026-11-21T16:03:51.580Z",
-        "gitCommitSha": "22f0b463e7a5e579904dd6211a520321035526f7",
-        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles"
+        "gitCommitSha": "22f0b463e7a5e579904dd6211a520321035526f7"
       }
     ],
     "skill-creator@claude-plugins-official": [
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
-        "version": "0412be76f50a",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/73c8cf3ea7e2",
+        "version": "73c8cf3ea7e2",
         "installedAt": "2026-11-08T14:09:27.561Z",
-        "lastUpdated": "2026-11-08T14:09:27.561Z",
-        "gitCommitSha": "0412be76f50ab4f4f8abff3753efa9269fbbca5b"
+        "lastUpdated": "2026-11-21T20:04:50.912Z",
+        "gitCommitSha": "73c8cf3ea7e296057b467990f2f5d61b4c922260"
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T17:55:03.565Z",
         "lastUpdated": "2026-11-08T17:55:03.565Z",
@@ -648,8 +648,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T18:03:38.024Z",
         "lastUpdated": "2026-11-08T18:03:38.024Z",
@@ -657,8 +657,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T18:03:45.096Z",
         "lastUpdated": "2026-11-08T18:03:45.096Z",
@@ -666,8 +666,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T19:50:54.380Z",
         "lastUpdated": "2026-11-08T19:50:54.380Z",
@@ -675,8 +675,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T19:50:57.770Z",
         "lastUpdated": "2026-11-08T19:50:57.770Z",
@@ -684,8 +684,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T19:51:01.226Z",
         "lastUpdated": "2026-11-08T19:51:01.226Z",
@@ -693,8 +693,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T20:39:57.518Z",
         "lastUpdated": "2026-11-08T20:39:57.518Z",
@@ -702,8 +702,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/0412be76f50a",
         "version": "0412be76f50a",
         "installedAt": "2026-11-08T20:40:00.757Z",
         "lastUpdated": "2026-11-08T20:40:00.757Z",
@@ -720,19 +720,19 @@
       },
       {
         "scope": "local",
+        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles",
         "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/skill-creator/73c8cf3ea7e2",
         "version": "73c8cf3ea7e2",
         "installedAt": "2026-11-21T16:03:51.580Z",
         "lastUpdated": "2026-11-21T16:03:51.580Z",
-        "gitCommitSha": "73c8cf3ea7e296057b467990f2f5d61b4c922260",
-        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles"
+        "gitCommitSha": "73c8cf3ea7e296057b467990f2f5d61b4c922260"
       }
     ],
     "code-review@claude-plugins-official": [
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/TaxProf_brtap-integration-playground",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T14:09:28.509Z",
         "lastUpdated": "2026-11-08T14:09:28.509Z",
@@ -740,8 +740,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T17:55:03.565Z",
         "lastUpdated": "2026-11-08T17:55:03.565Z",
@@ -749,8 +749,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T18:03:38.024Z",
         "lastUpdated": "2026-11-08T18:03:38.024Z",
@@ -758,8 +758,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-comunicacao-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-comunicacao-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T18:03:45.096Z",
         "lastUpdated": "2026-11-08T18:03:45.096Z",
@@ -767,8 +767,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T19:50:54.380Z",
         "lastUpdated": "2026-11-08T19:50:54.380Z",
@@ -776,8 +776,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-B",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-B",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T19:50:57.770Z",
         "lastUpdated": "2026-11-08T19:50:57.770Z",
@@ -785,8 +785,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com3-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com3-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T19:51:01.226Z",
         "lastUpdated": "2026-11-08T19:51:01.226Z",
@@ -794,8 +794,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-A",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-A",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T20:39:57.518Z",
         "lastUpdated": "2026-11-08T20:39:57.518Z",
@@ -803,8 +803,8 @@
       },
       {
         "scope": "local",
-        "projectPath": "/home/colaco/projetos/worktrees/bench-com4-C",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/bench-com4-C",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-08T20:40:00.757Z",
         "lastUpdated": "2026-11-08T20:40:00.757Z",
@@ -813,7 +813,7 @@
       {
         "scope": "local",
         "projectPath": "/home/diego/projetos/TaxProf_brtap-integration-playground",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-21T13:45:09.600Z",
         "lastUpdated": "2026-11-21T13:45:09.600Z",
@@ -821,12 +821,12 @@
       },
       {
         "scope": "local",
-        "installPath": "/home/colaco/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
+        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles",
+        "installPath": "/home/diego/.claude/plugins/cache/claude-plugins-official/code-review/1.0.1",
         "version": "1.0.1",
         "installedAt": "2026-11-21T16:03:51.580Z",
         "lastUpdated": "2026-11-21T16:03:51.580Z",
-        "gitCommitSha": "0412be76f50ab4f4f8abff3753efa9269fbbca5b",
-        "projectPath": "/home/diego/projetos/worktrees/jarbas-gas-city-profiles"
+        "gitCommitSha": "0412be76f50ab4f4f8abff3753efa9269fbbca5b"
       }
     ]
   }

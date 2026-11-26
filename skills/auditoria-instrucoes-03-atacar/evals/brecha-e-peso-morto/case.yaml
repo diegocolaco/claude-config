@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: brecha-e-peso-morto
+expected_outcome: |
+  Aponta a brecha do hotfix, o valor inválido bypassAll e as frases sem efeito, decide cada achado e entrega versão final sem esses problemas, sem alterar o original.
+context:
+  scaffold_script: place-files.sh

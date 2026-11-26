@@ -1,0 +1,10 @@
+id: deploy-change-test-gate
+type: skill
+scope: agent-requestable
+description: Use quando alterar pipeline deploy/E2E SGD local, harness item-test,
+  ou fechar mudança de infra com testes documentados obrigatórios.
+targets:
+  cursor:
+    directory: deploy-change-test-gate
+  claude-code:
+    include: true

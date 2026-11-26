@@ -1,0 +1,10 @@
+id: localizador-cenarios-teste
+type: skill
+scope: agent-requestable
+description: Use quando precisar de registro e persona em ambiente remoto teste/homologação
+  para validação manual ou E2E (SGD novo).
+targets:
+  cursor:
+    directory: localizador-cenarios-teste
+  claude-code:
+    include: true

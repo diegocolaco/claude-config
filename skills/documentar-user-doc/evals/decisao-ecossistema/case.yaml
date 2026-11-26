@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: decisao-ecossistema
+expected_outcome: |
+  Grava exclusivamente em user-doc/ecossistema-jarbas/ (não em user-doc/novo-sgd nem em docs/), registra a decisão com pergunta e resposta, atualiza o README da área e evita mover documentos existentes citados por regras.

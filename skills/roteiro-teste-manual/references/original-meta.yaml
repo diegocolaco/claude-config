@@ -1,0 +1,8 @@
+id: roteiro-teste-manual
+type: skill
+scope: agent-requestable
+description: Use quando montar roteiro de validação manual no chat (critérios de aceite,
+  checklist, caminhos absolutos de evidência).
+targets:
+  cursor:
+    directory: roteiro-teste-manual

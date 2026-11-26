@@ -1,0 +1,50 @@
+{
+  "skill_name": "prototype-parity-verification",
+  "notes": "Fixture de files montada por ../atualizacao-versao-prototipo/evals/files/montar_versoes.py; o gabarito fica fora do diretório da execução. O caso 2 usa o cenário `entregue` (catálogo com as diferenças DF-01 a DF-03 e o requisito REQ-02 sem tarefa, em Pedidos); o documento de decisões vem de files/decisoes-pedidos.md, copiado pelo controlador para o produto no caminho de `decisoes_em`, com commit, antes da execução.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "entregue-com-stub",
+      "classe": "simples",
+      "setup": "python3 ../atualizacao-versao-prototipo/evals/files/montar_versoes.py <dir> --tamanho pequena --cenario entregue --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "As telas da v11 foram entregues no SGD em {PRODUTO}; o catálogo de paridade da v11 está lá e o protótipo fica em {PROTOTIPO} (branch `v11`). Confere a paridade das telas entregues antes de eu fechar a entrega.",
+      "expected_output": "Roda a detecção de stub nos arquivos entregues; a tela de Pedidos com dataSource={[]} é marcada OCO e não conta como paridade aprovada; lista de conferência manual com o requisito entregue sem teste; nada automatizado no protótipo.",
+      "files": [
+        "../atualizacao-versao-prototipo/evals/files/montar_versoes.py"
+      ],
+      "expectations": [
+        "O script de stubs (`verificacao.py stubs`) rodou sobre os arquivos entregues do produto, ou os arquivos entregues foram examinados à procura de dados vazios",
+        "A tela de Pedidos, que recebe `dataSource={[]}`, está marcada como OCO (ou equivalente: existe mas não recebe dados) e não conta como paridade aprovada",
+        "A resposta traz uma lista de conferência manual com o requisito entregue sem teste (REQ-03)",
+        "Nenhum comando ou automação de navegador roda contra o protótipo",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "plano-com-bloco-catalogo",
+      "classe": "simples",
+      "setup": "python3 ../atualizacao-versao-prototipo/evals/files/montar_versoes.py <dir> --tamanho pequena --cenario entregue --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "decisoes_em": "docs/superpowers/specs/decisoes.md",
+      "prompt": "O catálogo de paridade da v11 está adotado no SGD em {PRODUTO}; o protótipo fica em {PROTOTIPO} (branch `v11`). O documento de decisões está em {PRODUTO}/docs/superpowers/specs/decisoes.md. Escreve o plano de implementação do grupo Pedidos em {PRODUTO}/docs/superpowers/plans/2026-11-01-grupo-pedidos.md e me diz como executar. Só o plano: não implementa nada.",
+      "expected_output": "Plano do grupo Pedidos escrito a partir do catálogo e do documento de decisões: cada tarefa com o bloco `**Catálogo:**` e o `Test:` com caminho de arquivo, restrições globais com a regra de biblioteca nova, `Spec` apontando para as decisões, `ligar` em dry-run sem bloqueantes, a ordem de fim de execução dita na resposta, sem editar o catálogo, sem subir o protótipo e sem implementar nada.",
+      "files": [
+        "../atualizacao-versao-prototipo/evals/files/montar_versoes.py",
+        "files/decisoes-pedidos.md"
+      ],
+      "expectations": [
+        "Toda tarefa do plano traz uma linha `**Catálogo:**` com IDs do catálogo ou `nenhum`",
+        "Tarefa com cenário funcional traz `` - Test: `caminho` `` com caminho de arquivo",
+        "As restrições globais do plano trazem a frase «Biblioteca nova ou componente fora da lista: parar e perguntar»",
+        "O campo `Spec` do plano aponta para o documento de decisões",
+        "`verificacao.py ligar` em dry-run sobre o plano não acusa bloqueantes",
+        "A resposta diz a ordem do fim da execução: `ligar --gravar` com o ledger, depois `sem-teste`, commit, revisão final e só então apagar o workspace e finalizar",
+        "Nenhuma tarefa do plano edita `.squad/contracts/parity/catalog.json`",
+        "O plano não propõe subir o protótipo nem tirar prints, e confere a aparência pelo código",
+        "Nada foi implementado no produto além do plano",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    }
+  ]
+}

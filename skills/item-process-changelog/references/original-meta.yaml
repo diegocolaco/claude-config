@@ -1,0 +1,8 @@
+id: item-process-changelog
+type: skill
+scope: agent-requestable
+description: Use quando alterar processo de implementação ITEM SGD (sgd-local, harness,
+  gates, /sgd-entrega) e atualizar histórico em user-doc.
+targets:
+  cursor:
+    directory: item-process-changelog

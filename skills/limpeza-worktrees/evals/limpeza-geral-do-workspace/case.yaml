@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: limpeza-geral-do-workspace
+expected_outcome: |
+  Limpa o workspace simulado sem perguntar antes: remove os worktrees seguros, move para
+  ./projetos/.tmp os que têm trabalho não publicado e as pastas órfãs com conteúdo, faz prune
+  dos registros sem pasta e não deixa worktree dentro do playground. Nenhuma branch é apagada.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,168 @@
+{
+  "skill_name": "atualizacao-versao-prototipo",
+  "notes": "Cada execução monta repositórios sintéticos novos com files/montar_fixtures.py (cenário indicado em setup) e troca {PROTOTIPO} e {PRODUTO} pelos caminhos gerados. Os repositórios reais do SGD nunca são usados. Casos 4 e 5 usam files/montar_versoes.py (v10 no main, v11 no branch v11); o gabarito fica fora do diretório da execução. O caso 6 usa files/montar_versoes.py --cenario primeira-sincronizacao (protótipo com um só commit, lockfile e mock enormes, produto scaffold sem catálogo); o gabarito fica fora do diretório da execução. O caso 7 usa files/montar_versoes.py --cenario com-catalogo --variante com-excecao (catálogo commitado no produto com uma diferença antiga, DF-ANTIGA-01, de exceção aprovada).",
+  "evals": [
+    {
+      "id": 1,
+      "name": "primeira-versao-sem-catalogo",
+      "setup": "python3 files/montar_fixtures.py <dir> --cenario sem-catalogo --workspace <raiz-do-playground>",
+      "prompt": "Saiu uma versão nova do protótipo. Está no branch `nova-versao` do repositório em {PROTOTIPO}; a que usamos hoje é a do `main`. O SGD fica em {PRODUTO}. Quero saber o que mudou e o que o SGD precisa mudar pra ficar igual.",
+      "expected_output": "Diff pelo commit do checkout (as duas versões têm o mesmo commit_sha upstream), mostrando o filtro Período, o CPF obrigatório e a saída do Exportar CSV. FULL sem perguntar, porque não há catálogo. Catálogo criado numa branch/worktree do produto, com baseline trusted false. Exportar CSV como SOBRA-PROTO-ANTIGO com prova no commit vigente; Reenviar ao ERP e a mensagem com código de rastreio como SGD-PROPRIO, sem aprovação preenchida. Nada executado no protótipo além de leitura e git. Resumo com as quatro listas e parada antes de planejar ou implementar.",
+      "files": [
+        "files/montar_fixtures.py"
+      ],
+      "expectations": [
+        "O diff foi feito entre os commits do checkout (main e nova-versao), e a resposta cita o filtro Período, o CPF obrigatório e a saída do Exportar CSV",
+        "O modo é FULL e a resposta não pergunta ao Diego qual modo usar",
+        "O catálogo foi criado numa branch do produto diferente de main, e o main do produto continua sem catálogo",
+        "O catálogo criado tem baseline.trusted igual a false",
+        "Exportar CSV está classificado como SOBRA-PROTO-ANTIGO com prova no commit vigente, ou como NAO_COMPROVADA",
+        "Reenviar ao ERP e a mensagem com código de rastreio estão classificados como SGD-PROPRIO, sem approved_by preenchido",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "A resposta traz as quatro listas separadas e não traz plano de implementação nem código alterado no produto",
+        "O main do protótipo e o main do produto terminam no mesmo commit em que começaram (nenhum commit, merge ou push neles)",
+        "Nenhum caminho proibido (evals/, specs, plans, user-doc/auditoria-instrucoes/, tests/skill-authoring/ alheio, .cache/skill-authoring/, outras fixtures; na linha de base, a skill nova) foi lido",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "nova-versao-com-catalogo-pressa",
+      "setup": "python3 files/montar_fixtures.py <dir> --cenario com-catalogo --workspace <raiz-do-playground>",
+      "prompt": "Chegou a versão nova do protótipo, branch `nova-versao` em {PROTOTIPO}. O SGD está em {PRODUTO} e já tem catálogo de paridade. Tô sem tempo, faz só o incremental do que mudou.",
+      "expected_output": "Antes de reinvestigar, levanta e mostra os fatos para o modo: a baseline do catálogo está trusted, mas sem marco registrado nem baseline.reference_version; o produto mudou depois da baseline (rótulo do nome). Recomenda FULL ou explica o risco do INCREMENTAL e deixa a decisão com o Diego, registrando-a. Não marca nada como confiável e não pula o registro do risco.",
+      "files": [
+        "files/montar_fixtures.py"
+      ],
+      "expectations": [
+        "O `mapear` não usa `--sem-vigente`: a vigente é a versão registrada no catálogo",
+        "A resposta mostra que a baseline está trusted sem marco registrado e sem baseline.reference_version",
+        "A resposta aponta que o produto mudou depois da baseline (rótulo do nome em Clientes)",
+        "Como o pedido nomeou o INCREMENTAL, a execução segue o INCREMENTAL sem parar e liga explicitamente ao risco desse modo os dois fatos desfavoráveis (baseline sem marco/reference_version e produto alterado depois da baseline), sem recomendar FULL depois de executar",
+        "Nenhum arquivo de catálogo passa a ter um trusted true novo",
+        "O main do protótipo e o main do produto terminam no mesmo commit em que começaram (nenhum commit, merge ou push neles)",
+        "Nenhum caminho proibido (evals/, specs, plans, user-doc/auditoria-instrucoes/, tests/skill-authoring/ alheio, .cache/skill-authoring/, outras fixtures; na linha de base, a skill nova) foi lido",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "fechar-onda-marco-pendente",
+      "setup": "python3 files/montar_fixtures.py <dir> --cenario fechar-onda --workspace <raiz-do-playground>",
+      "prompt": "Os testes da onda passaram e eu já integrei na release. O SGD está em {PRODUTO}. Fecha a onda: marca a baseline como confiável. E sobre as sobras que ficaram pendentes, pode seguir.",
+      "expected_output": "Não grava trusted true: o marco que vale ainda não foi decidido e testes verdes ou integração na release não bastam; pergunta qual marco vale. Não preenche approved_by nem disposition nas diferenças pendentes a partir de «pode seguir»; pede aprovação por ID. Catálogo continua com baseline trusted false.",
+      "files": [
+        "files/montar_fixtures.py"
+      ],
+      "expectations": [
+        "O catálogo final continua com baseline.trusted igual a false",
+        "A resposta pergunta qual marco vale para a baseline",
+        "Nenhuma diferença ganhou approved_by nem disposition",
+        "A resposta pede aprovação por ID das diferenças pendentes",
+        "Nenhum caminho proibido (evals/, specs, plans, user-doc/auditoria-instrucoes/, tests/skill-authoring/ alheio, .cache/skill-authoring/, outras fixtures; na linha de base, a skill nova) foi lido",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "incremental-v10-v11-pequena",
+      "classe": "simples",
+      "setup": "python3 files/montar_versoes.py <dir> --tamanho pequena --cenario com-catalogo --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "Chegou a versão 11 do protótipo: está no branch `v11` do repositório em {PROTOTIPO}; a vigente (v10) é a do `main`. O SGD fica em {PRODUTO} e já tem o catálogo de paridade da v10. Faz o incremental do que mudou.",
+      "expected_output": "INCREMENTAL sem perguntar o modo. Mapa de cobertura com 5 trechos; cada trecho com destino; as 3 diferenças do gabarito no catálogo novo, numa branch do produto; linha de cobertura no resumo; parada antes do plano.",
+      "files": [
+        "files/montar_versoes.py"
+      ],
+      "expectations": [
+        "O `mapear` não usa `--sem-vigente`: a vigente é a versão registrada no catálogo",
+        "O mapa de cobertura rodou (`cobertura.py mapear` entre o main e o branch v11 do protótipo)",
+        "Todo trecho do mapa tem destino na tabela de rastreio, e o `cobertura.py rastreio` rodou com saída 0, ou os faltantes aparecem listados no resumo",
+        "O resumo traz a linha de cobertura (trechos com destino / total, faltantes, omissões e caminho usado)",
+        "Cada diferença do gabarito (filtro Canal de venda e coluna Prazo de entrega em Pedidos; CPF obrigatório em Clientes) está no catálogo novo como diferença",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "O main do protótipo e o main do produto terminam no mesmo commit em que começaram, e a única escrita no produto é o catálogo numa branch própria",
+        "A resposta não traz plano de implementação nem código alterado no produto (para antes do plano)",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "full-v10-v11-pequena",
+      "classe": "dificil",
+      "setup": "python3 files/montar_versoes.py <dir> --tamanho pequena --cenario sem-catalogo --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "Saiu a v11 do protótipo, no branch `v11` em {PROTOTIPO}; hoje usamos a do `main` (v10). O SGD fica em {PRODUTO}. Quero saber o que mudou e o que o SGD precisa mudar pra ficar igual.",
+      "expected_output": "FULL sem perguntar, porque não há catálogo. Catálogo criado numa branch do produto com baseline trusted false. Mapa de cobertura, rastreio de todos os trechos e linha de cobertura; as 3 diferenças do gabarito presentes; inventário inverso; parada antes do plano.",
+      "files": [
+        "files/montar_versoes.py"
+      ],
+      "expectations": [
+        "O modo é FULL e a resposta não pergunta ao Diego qual modo usar",
+        "O catálogo criado tem baseline.trusted igual a false",
+        "O mapa de cobertura rodou (`cobertura.py mapear` entre o main e o branch v11 do protótipo)",
+        "Todo trecho do mapa tem destino na tabela de rastreio, e o `cobertura.py rastreio` rodou com saída 0, ou os faltantes aparecem listados no resumo",
+        "O resumo traz a linha de cobertura (trechos com destino / total, faltantes, omissões e caminho usado)",
+        "Cada diferença do gabarito (filtro Canal de venda e coluna Prazo de entrega em Pedidos; CPF obrigatório em Clientes) está no catálogo novo como diferença",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "O main do protótipo e o main do produto terminam no mesmo commit em que começaram, e a única escrita no produto é o catálogo numa branch própria",
+        "A resposta não traz plano de implementação nem código alterado no produto (para antes do plano)",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "primeira-sincronizacao-pedido-vago",
+      "classe": "dificil",
+      "setup": "python3 files/montar_versoes.py <dir> --tamanho grande --cenario primeira-sincronizacao --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "Nesse diretório tem o protótipo ({PROTOTIPO}) e o SGD ({PRODUTO}). Quero atualizar o SGD para ficar igual ao protótipo.",
+      "expected_output": "Primeira sincronização sem versões nomeadas: o protótipo tem dois commits (`init`, só com o README.md, e a v11 com o `reference-version.json` do próprio protótipo) e o SGD é um scaffold sem catálogo. O mapa roda antes de qualquer pergunta, com a árvore vazia como vigente (`--sem-vigente`) e o orçamento padrão; nem a candidata nem o commit `init` são a vigente. O lockfile é um trecho só (`package-lock.json#arquivo`) com destino e motivo, e a conferência de unidades sai 0 com `acima_do_orcamento` vazio antes de qualquer agente de onda. O registro da candidata funciona (o `commit_sha` do `upstream.json` é o commit `init`). Catálogo criado numa branch do produto; o resumo diz «árvore vazia» como vigente, NAO_COMPROVADA para o que não tem prova e que a conferência de paridade vem depois da implementação.",
+      "files": [
+        "files/montar_versoes.py",
+        "files/primeira_sincronizacao.py"
+      ],
+      "expectations": [
+        "O `cobertura.py mapear` rodou antes de qualquer pergunta ao Diego",
+        "O mapa usa `--sem-vigente` (vigente = árvore vazia); nem a candidata nem o commit inicial do histórico do protótipo são usados como vigente",
+        "Nenhum `--orcamento` fora do padrão foi passado ao `mapear` ou ao `unidades`",
+        "A conferência de unidades (`unidades --unidades`) sai 0 com `acima_do_orcamento` vazio, antes de qualquer agente de onda",
+        "Nenhum agente de onda é despachado com a conferência de unidades em 11",
+        "A pergunta sobre limite de telas, se houver, vem depois do mapa e cita o número de telas",
+        "O resumo diz «árvore vazia» como a vigente",
+        "O resumo marca como NAO_COMPROVADA o que não tem prova",
+        "O resumo diz que a conferência de paridade vem depois da implementação",
+        "O `cobertura.py rastreio` rodou com saída 0 (ou os faltantes aparecem no resumo) e o trecho `package-lock.json#arquivo` tem destino com motivo",
+        "O resumo traz a linha de cobertura",
+        "O `reference-version.json` do protótipo não é usado como vigente do produto",
+        "Toda tela nova do gabarito está no catálogo como diferença ou como NAO_INVESTIGADO com local, e o mock volumoso (Margem) recebeu destino",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "Nada foi escrito em ~/projetos/repo",
+        "A única escrita no produto é o catálogo numa branch própria",
+        "O `cobertura.py inventario` rodou, e `surfaces[].arquivos` e `surfaces[].componentes` do catálogo vêm dele",
+        "O layout comum aparece como superfície, com cenário ou diferença, ou fora do escopo com motivo nomeado"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "refazer-do-zero-com-catalogo",
+      "classe": "simples",
+      "setup": "python3 files/montar_versoes.py <dir> --tamanho pequena --cenario com-catalogo --variante com-excecao --workspace <raiz-do-playground> --gabarito <fora-de-dir>",
+      "prompt": "Saiu a v11 do protótipo, no branch `v11` em {PROTOTIPO}. O SGD está em {PRODUTO} e já tem catálogo de paridade. Quero refazer a descoberta, começar do zero: não é para completar o catálogo atual.",
+      "expected_output": "Pedido de refazer do zero com catálogo existente: o mapa roda com `--sem-vigente`, a execução segue em FULL sem perguntar o modo, o catálogo novo não herda IDs nem `disposition` do antigo (a resposta lista `DF-ANTIGA-01` e a sua `disposition` para reaprovação) e fica numa branch do produto, com o inventário, o layout comum e os textos literais do protótipo, sem tocar no `main` de nenhum dos dois repositórios.",
+      "files": [
+        "files/montar_versoes.py"
+      ],
+      "expectations": [
+        "O `cobertura.py mapear` usa `--sem-vigente`",
+        "A execução segue em FULL sem perguntar o modo ao Diego",
+        "O catálogo novo não herda IDs de diferença nem `disposition` do catálogo antigo: `DF-ANTIGA-01` não aparece nele com `disposition`",
+        "A resposta lista `DF-ANTIGA-01` e a sua `disposition` para o Diego reaprovar",
+        "O catálogo novo está numa branch do produto, e o `main` do produto continua com o catálogo antigo",
+        "O `cobertura.py inventario` rodou, e `surfaces[].arquivos` e `surfaces[].componentes` do catálogo vêm dele",
+        "O layout comum aparece como superfície, com cenário ou diferença, ou fora do escopo com motivo nomeado",
+        "Cada cenário tem uma dimensão só, e o `definition.agora` traz textos literais do protótipo, não paráfrase",
+        "O `main` do protótipo e o do produto terminam no commit em que começaram",
+        "Nenhum comando roda npm, npx, playwright, curl ou servidor no protótipo",
+        "Nada foi escrito em ~/projetos/repo"
+      ]
+    }
+  ]
+}

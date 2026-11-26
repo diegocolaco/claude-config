@@ -1,0 +1,8 @@
+id: repo-governance-artifacts
+type: skill
+scope: agent-requestable
+description: Use when governance rules/skills/agents/commands appear under repo/ or
+  clone paths — migrate to ecosystem/canonical or profiles.
+targets:
+  cursor:
+    directory: repo-governance-artifacts

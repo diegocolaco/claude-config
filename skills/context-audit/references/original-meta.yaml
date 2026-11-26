@@ -1,0 +1,7 @@
+id: context-audit
+type: skill
+scope: agent-requestable
+description: "Auditoria manual e sob demanda: lista marcadores de Rules/Skills com proveniência qualificável no contexto atual do Agent principal (observabilidade, não obediência). Só via /context-audit."
+targets:
+  cursor:
+    directory: context-audit

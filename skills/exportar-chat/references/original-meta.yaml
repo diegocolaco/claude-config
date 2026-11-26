@@ -1,0 +1,10 @@
+id: exportar-chat
+type: skill
+scope: agent-requestable
+description: Use quando montar pacote sanitizado de conversa e artefatos em user-doc/
+  para revisão externa ou arquivo.
+targets:
+  cursor:
+    directory: exportar-chat
+governance:
+  export_external: true
